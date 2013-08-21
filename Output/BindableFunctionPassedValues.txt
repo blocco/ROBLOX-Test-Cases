@@ -1,0 +1,66 @@
+10:41:45.971 - TestService: RawEqual Test Case #1: passed -- Lua number
+10:41:46.018 - TestService: RawEqual Test Case #2: passed -- Lua string
+10:41:46.049 - TestService: RawEqual Test Case #3: FAILED -- Lua empty table
+10:41:46.080 - TestService: RawEqual Test Case #4: FAILED -- Lua numeric table
+10:41:46.112 - TestService: RawEqual Test Case #5: FAILED -- Lua assocative table
+10:41:46.158 - TestService: RawEqual Test Case #6: FAILED -- Lua mixed table
+10:41:46.190 - TestService: RawEqual Test Case #7: passed -- Lua nil
+10:41:46.221 - TestService: RawEqual Test Case #8: passed -- Lua function
+10:41:46.252 - TestService: RawEqual Test Case #9: FAILED -- Lua thread
+10:41:46.299 - TestService: RawEqual Test Case #10: FAILED -- Lua userdata
+10:41:46.330 - TestService: RawEqual Test Case #11: passed -- Roblox object
+10:41:46.362 - TestService: RawEqual Test Case #12: FAILED -- Roblox event
+10:41:46.408 - TestService: RawEqual Test Case #13: passed -- Roblox function
+10:41:46.440 - TestService: RawEqual Test Case #14: passed -- Roblox yield function
+10:41:46.471 - TestService: RawEqual Test Case #15: passed -- Roblox property
+10:41:46.502 - TestService: checkpoint RawEqualTestCases
+
+10:41:46.502 - TestService: EnvironmentInjection Test Case #16: passed -- Lua number
+10:41:46.549 - TestService: EnvironmentInjection Test Case #17: passed -- Lua string
+10:41:46.580 - TestService: EnvironmentInjection Test Case #18: passed -- Lua empty table
+10:41:46.612 - TestService: EnvironmentInjection Test Case #19: passed -- Lua numeric table
+10:41:46.643 - TestService: EnvironmentInjection Test Case #20: passed -- Lua assocative table
+10:41:46.690 - TestService: EnvironmentInjection Test Case #21: passed -- Lua mixed table
+10:41:46.721 - TestService: EnvironmentInjection Test Case #22: passed -- Lua nil
+10:41:46.752 - TestService: EnvironmentInjection Test Case #23: passed -- Lua function
+10:41:46.783 - TestService: EnvironmentInjection Test Case #24: passed -- Lua thread
+10:41:46.830 - TestService: EnvironmentInjection Test Case #25: passed -- Lua userdata
+10:41:46.862 - TestService: EnvironmentInjection Test Case #26: passed -- Roblox object
+10:41:46.893 - TestService: EnvironmentInjection Test Case #27: passed -- Roblox event
+10:41:46.940 - TestService: EnvironmentInjection Test Case #28: passed -- Roblox function
+10:41:46.971 - TestService: EnvironmentInjection Test Case #29: passed -- Roblox yield function
+10:41:47.002 - TestService: EnvironmentInjection Test Case #30: passed -- Roblox property
+10:41:47.033 - TestService: checkpoint EnvInjectTestCases
+
+10:41:47.033 - TestService: DuckEqual Test Case #31: passed -- Lua number
+10:41:47.080 - TestService: DuckEqual Test Case #32: passed -- Lua string
+10:41:47.112 - TestService: DuckEqual Test Case #33: passed -- Lua empty table
+10:41:47.143 - TestService: DuckEqual Test Case #34: passed -- Lua numeric table
+10:41:47.174 - TestService: DuckEqual Test Case #35: passed -- Lua assocative table
+10:41:47.221 - TestService: DuckEqual Test Case #36: FAILED -- Lua mixed table
+10:41:47.252 - TestService: DuckEqual Test Case #37: passed -- Lua nil
+10:41:47.283 - TestService: DuckEqual Test Case #38: passed -- Lua function
+10:41:47.330 - TestService: DuckEqual Test Case #39: FAILED -- Lua thread
+10:41:47.362 - TestService: DuckEqual Test Case #40: FAILED -- Lua userdata
+10:41:47.393 - TestService: DuckEqual Test Case #41: passed -- Roblox object
+10:41:47.424 - TestService: DuckEqual Test Case #42: FAILED -- Roblox event
+10:41:47.471 - TestService: DuckEqual Test Case #43: passed -- Roblox function
+10:41:47.502 - TestService: DuckEqual Test Case #44: passed -- Roblox yield function
+10:41:47.533 - TestService: DuckEqual Test Case #45: passed -- Roblox property
+10:41:47.565 - TestService: checkpoint DuckEqualTestCases
+
+10:41:47.565 - TestService: TypeEqual Test Case #46: passed -- Lua number
+10:41:47.612 - TestService: TypeEqual Test Case #47: passed -- Lua string
+10:41:47.643 - TestService: TypeEqual Test Case #48: passed -- Lua table
+10:41:47.674 - TestService: TypeEqual Test Case #49: passed -- Lua nil
+10:41:47.721 - TestService: TypeEqual Test Case #50: passed -- Lua function
+10:41:47.752 - TestService: TypeEqual Test Case #51: FAILED -- Lua thread
+10:41:47.783 - TestService: TypeEqual Test Case #52: FAILED -- Lua userdata
+10:41:47.815 - TestService: TypeEqual Test Case #53: passed -- Roblox object
+10:41:47.862 - TestService: TypeEqual Test Case #54: FAILED -- Roblox event
+10:41:47.893 - TestService: TypeEqual Test Case #55: passed -- Roblox function
+10:41:47.924 - TestService: TypeEqual Test Case #56: passed -- Roblox yield function
+10:41:47.955 - TestService: TypeEqual Test Case #57: passed -- Roblox property
+10:41:48.002 - TestService: checkpoint TypeEqualTestCases
+
+10:41:48.002 - TestService: Run completed, tests: 57, warns: 0, errors: 14
