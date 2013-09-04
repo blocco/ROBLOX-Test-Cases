@@ -88,18 +88,31 @@ end
 
 local testCaseTypes = {
     TypeEqualTestCases = {
-        TypeEqualTestCase(0,                                 "number",   "Lua number");
-        TypeEqualTestCase("",                                "string",   "Lua string");
-        TypeEqualTestCase({},                                "table",    "Lua table");
-        TypeEqualTestCase(nil,                               "nil",      "Lua nil");
-        TypeEqualTestCase(function() end,                    "function", "Lua function");
-        TypeEqualTestCase(coroutine.create(function() end),  "thread",   "Lua thread");
-        TypeEqualTestCase(newproxy(true),                    "string",   "Lua userdata");
-        TypeEqualTestCase(game,                              "userdata", "Roblox object");
-        TypeEqualTestCase(game.Changed,                      "userdata", "Roblox event");
-        TypeEqualTestCase(game.IsA,                          "function", "Roblox function");
-        TypeEqualTestCase(game.WaitForChild,                 "function", "Roblox yield function");
-        TypeEqualTestCase(game.ClassName,                    "string",   "Roblox property");
+        TypeEqualTestCase(0,                                "number",   "Lua number");
+        TypeEqualTestCase("",                               "string",   "Lua string");
+        TypeEqualTestCase({},                               "table",    "Lua table");
+        TypeEqualTestCase(nil,                              "nil",      "Lua nil");
+        TypeEqualTestCase(function() end,                   "function", "Lua function");
+        TypeEqualTestCase(coroutine.create(function() end), "thread",   "Lua thread");
+        TypeEqualTestCase(newproxy(true),                   "string",   "Lua userdata");
+        TypeEqualTestCase(game,                             "userdata", "Roblox object");
+        TypeEqualTestCase(game.Changed,                     "userdata", "Roblox event");
+        TypeEqualTestCase(game.IsA,                         "function", "Roblox function");
+        TypeEqualTestCase(game.WaitForChild,                "function", "Roblox yield function");
+        TypeEqualTestCase(game.ClassName,                   "string",   "Roblox property");
+		TypeEqualTestCase(Enum,                             "userdata", "Roblox enums container");
+		TypeEqualTestCase(Enum.Font,                        "userdata", "Roblox enum class");
+		TypeEqualTestCase(Enum.Font.Legacy,                 "userdata", "Roblox enum item");
+		TypeEqualTestCase(Axes.new(),                       "userdata", "Roblox axes");
+		TypeEqualTestCase(BrickColor.new(),                 "userdata", "Roblox brickcolor");
+		TypeEqualTestCase(CFrame.new(),                     "userdata", "Roblox cframe");
+		TypeEqualTestCase(Color3.new(),                     "userdata", "Roblox color3");
+		TypeEqualTestCase(Faces.new(),                      "userdata", "Roblox faces");
+		TypeEqualTestCase(Region3.new(),                    "userdata", "Roblox region3");
+		TypeEqualTestCase(Region3int16.new(),               "userdata", "Roblox region3int16");
+		TypeEqualTestCase(Vector3.new(),                    "userdata", "Roblox vector3");
+		TypeEqualTestCase(Vector3int16.new(),               "userdata", "Roblox vector3int16");
+		TypeEqualTestCase(LoadLibrary("RbxGear"),           "userdata", "Roblox library")
     };
     DuckEqualTestCases = {
         DuckEqualTestCase(0,                                "Lua number");
@@ -117,6 +130,19 @@ local testCaseTypes = {
         DuckEqualTestCase(game.IsA,                         "Roblox function");
         DuckEqualTestCase(game.WaitForChild,                "Roblox yield function");
         DuckEqualTestCase(game.ClassName,                   "Roblox property");
+		DuckEqualTestCase(Enum,                             "Roblox enums container");
+		DuckEqualTestCase(Enum.Font,                        "Roblox enum class");
+		DuckEqualTestCase(Enum.Font.Legacy,                 "Roblox enum item");
+		DuckEqualTestCase(Axes.new(),                       "Roblox axes");
+		DuckEqualTestCase(BrickColor.new(),                 "Roblox brickcolor");
+		DuckEqualTestCase(CFrame.new(),                     "Roblox cframe");
+		DuckEqualTestCase(Color3.new(),                     "Roblox color3");
+		DuckEqualTestCase(Faces.new(),                      "Roblox faces");
+		DuckEqualTestCase(Region3.new(),                    "Roblox region3");
+		DuckEqualTestCase(Region3int16.new(),               "Roblox region3int16");
+		DuckEqualTestCase(Vector3.new(),                    "Roblox vector3");
+		DuckEqualTestCase(Vector3int16.new(),               "Roblox vector3int16");
+		DuckEqualTestCase(LoadLibrary("RbxGear"),           "Roblox library")
     };
     RawEqualTestCases = {
         RawEqualTestCase(0,                                 "Lua number");
@@ -134,6 +160,19 @@ local testCaseTypes = {
         RawEqualTestCase(game.IsA,                          "Roblox function");
         RawEqualTestCase(game.WaitForChild,                 "Roblox yield function");
         RawEqualTestCase(game.ClassName,                    "Roblox property");
+		RawEqualTestCase(Enum,                              "Roblox enums container");
+		RawEqualTestCase(Enum.Font,                         "Roblox enum class");
+		RawEqualTestCase(Enum.Font.Legacy,                  "Roblox enum item");
+		RawEqualTestCase(Axes.new(),                        "Roblox axes");
+		RawEqualTestCase(BrickColor.new(),                  "Roblox brickcolor");
+		RawEqualTestCase(CFrame.new(),                      "Roblox cframe");
+		RawEqualTestCase(Color3.new(),                      "Roblox color3");
+		RawEqualTestCase(Faces.new(),                       "Roblox faces");
+		RawEqualTestCase(Region3.new(),                     "Roblox region3");
+		RawEqualTestCase(Region3int16.new(),                "Roblox region3int16");
+		RawEqualTestCase(Vector3.new(),                     "Roblox vector3");
+		RawEqualTestCase(Vector3int16.new(),                "Roblox vector3int16");
+		RawEqualTestCase(LoadLibrary("RbxGear"),            "Roblox library")
     };
     EnvInjectTestCases = {
         EnvInjectTestCase(0,                                "Lua number");
@@ -151,6 +190,19 @@ local testCaseTypes = {
         EnvInjectTestCase(game.IsA,                         "Roblox function");
         EnvInjectTestCase(game.WaitForChild,                "Roblox yield function");
         EnvInjectTestCase(game.ClassName,                   "Roblox property");
+		EnvInjectTestCase(Enum,                             "Roblox enums container");
+		EnvInjectTestCase(Enum.Font,                        "Roblox enum class");
+		EnvInjectTestCase(Enum.Font.Legacy,                 "Roblox enum item");
+		EnvInjectTestCase(Axes.new(),                       "Roblox axes");
+		EnvInjectTestCase(BrickColor.new(),                 "Roblox brickcolor");
+		EnvInjectTestCase(CFrame.new(),                     "Roblox cframe");
+		EnvInjectTestCase(Color3.new(),                     "Roblox color3");
+		EnvInjectTestCase(Faces.new(),                      "Roblox faces");
+		EnvInjectTestCase(Region3.new(),                    "Roblox region3");
+		EnvInjectTestCase(Region3int16.new(),               "Roblox region3int16");
+		EnvInjectTestCase(Vector3.new(),                    "Roblox vector3");
+		EnvInjectTestCase(Vector3int16.new(),               "Roblox vector3int16");
+		EnvInjectTestCase(LoadLibrary("RbxGear"),           "Roblox library")
     }
 }
 
